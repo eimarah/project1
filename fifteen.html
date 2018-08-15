@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <head>
+        <title>Fifteen Puzzle</title>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+         <link href="fifteen.css" type="text/css" rel="stylesheet"/>
+        
+    </head>
+    
+    <body onload="newgame()">
+    <div class="main">
+		
+         <h1>Fifteen Puzzle </h1><hr/ class="line"><br/>
+         <div class="result">            
+            <div>Choose Your Puzzle Background: <select id="changeBg" onchange="chBack(this.value)">
+                    <option value="-1">--Select--</option>
+                      <option value="1">The Proud Family</option>
+                      <option value="2">Cartoon Network</option>
+                      <option value="3">Dragon Ball Z</option>
+                      <option value="4">Johnny Bravo</option>
+                      <option value="5">The Power Puff</option>
+                    </select>
+            </div><br/>
+        </div>
+        <div id="wrapper">
+        <p class="container">
+    The Fifteen Puzzle is one of the world’s most recognized<br/> and popular brainteasers, <br/>
+    and it has been a favorite for generations!<br/> 
+    The object of the game is:<br/>
+    Players shuffle the images marked with numbers 1-15, <br/>
+    then attempt to slide them back in order<br/>
+    from one (1) to 15.<br/>
+    </div>
+    </p>
+        <div id="container"></div>
+        <div id="te"></div>
+        <div id="work"></div>
+        <div id="test"></div>
+        
+        
+        <div class="content">
+            
+            <div >
+                    <button type="button" onclick="shuffle()">Shuffle</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <label id="move"> </label> 
+            
+            </div>
+            -
+        </div>
+        
+        <div class="clear"></div><br/><br/>
+        <div class="comment">
+            
+            <p align="center"><span class="feat">Features Included:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End-of-game notification&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+            Transitions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple backgrounds
+            </p>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="fifteen.js"></script>
+    </body>
+</html>
